@@ -22,10 +22,7 @@
             <?php require_once("newFolder.php");?>
         </div>
         <div class="Upload">
-            <form method="post" action="upload.php" enctype="multipart/form-data">
-            <input type="file" name="file">
-            <input type="submit" value="Upload" name="Upload">
-            </form>
+        <button type="button" class="btn btn-warning btn-lg btn-block" data-bs-toggle="modal" data-bs-target="#UploadFile">Upload File</button>
         </div>
     </div>
 
@@ -40,7 +37,7 @@ for ($a = 2; $a < count($files); $a++)
     <p class="files">
     <img src="student/second.jpg"height="100"width="100"/>
     <?php echo $files[$a];?>
-        <a href="uploads/<?php echo $files[$a];?>"download = "<?php echo $files[$a];?>">
+        <a href="uploads/<?php echo $files[$a];?>"download = "<?php echo $files[$a];?>"style="color:#30d2f2;"> 
         DOWNLOAD
         </a>
         <a href="delete.php?name=uploads/<?php echo $files[$a];?> "style="color:red;">
@@ -49,7 +46,7 @@ for ($a = 2; $a < count($files); $a++)
         <a href="rename.php?rename/<?php echo $files[$a];?>" style="color:green;" data-bs-toggle="modal" data-bs-target="#exampleModal">
         RENAME
         </a>
-        <a href="view.php?name=uploads/<?php echo $files[$a];?> "style="color:orange;">
+        <a href="./uploads/<?php echo $files[$a];?> "style="color:orange;">
         VIEW
         </a>
         </p>
@@ -81,6 +78,27 @@ for ($a = 2; $a < count($files); $a++)
 ?>
 </div>
 
+        <!-- Modal Add File-->
+        <div class="modal fade" id="UploadFile" tabindex="-1" aria-labelledby="UploadFile" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="UploadFile">Rename File</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!-- Begin Form-->
+      <form method="post" action="upload.php" enctype="multipart/form-data">
+            <input type="file" name="file">
+            <input type="submit" value="Upload" name="Upload">
+            </form>   
+        <!-- End Form-->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 
-    
