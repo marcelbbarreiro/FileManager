@@ -10,6 +10,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/main.css">
 </head>
+<header class="header">
+  <div class="Menu">
+    <h1>Welcome</h1>
+  </div>
+</header>
+
 <body> 
     <div class="container"> 
         <div class="folder">
@@ -40,7 +46,7 @@ for ($a = 2; $a < count($files); $a++)
         <a href="delete.php?name=uploads/<?php echo $files[$a];?> "style="color:red;">
         DELETE
         </a>
-        <a href="rename.php?name=uploads/<?php echo $files[$a];?>" style="color:green;" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        <a href="rename.php?rename/<?php echo $files[$a];?>" style="color:green;" data-bs-toggle="modal" data-bs-target="#exampleModal">
         RENAME
         </a>
         <a href="view.php?name=uploads/<?php echo $files[$a];?> "style="color:orange;">
