@@ -1,7 +1,5 @@
 <?php
 
-include("index.php");
-
 if ($_POST) {
     $oldName=$_POST['oldName'];
     $newName=$_POST['newName'];
