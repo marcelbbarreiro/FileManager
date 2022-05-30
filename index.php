@@ -32,6 +32,7 @@ for ($a = 2; $a < count($files); $a++)
 ?>
 
     <p class="files">
+    <img src="student/second.jpg"height="100"width="100"/>
     <?php echo $files[$a];?>
         <a href="uploads/<?php echo $files[$a];?>"download = "<?php echo $files[$a];?>">
         DOWNLOAD
@@ -39,13 +40,35 @@ for ($a = 2; $a < count($files); $a++)
         <a href="delete.php?name=uploads/<?php echo $files[$a];?> "style="color:red;">
         DELETE
         </a>
-        <a href="rename.php?name=uploads/<?php echo $files[$a];?> "style="color:green;">
+        <a href="rename.php?name=uploads/<?php echo $files[$a];?>" style="color:green;" data-bs-toggle="modal" data-bs-target="#exampleModal">
         RENAME
         </a>
         <a href="view.php?name=uploads/<?php echo $files[$a];?> "style="color:orange;">
         VIEW
         </a>
         </p>
+        <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Rename File</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form method="post" action="./rename.php" >
+            <input type="text" name="oldName" value="<?php echo $files[$a]; ?>">
+
+            <input type="text" name="newName" placeholder="New Name">
+            <input type="submit" value="submit" class="btn btn-primary">
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
         
 <?php
 }
