@@ -35,7 +35,7 @@ for ($a = 2; $a < count($files); $a++)
 ?>
 
     <p class="files">
-    <img src="student/second.jpg"height="100"width="100"/>
+    <?php echo $files["name"];?>
     <?php echo $files[$a];?>
         <a href="uploads/<?php echo $files[$a];?>"download = "<?php echo $files[$a];?>"style="color:#30d2f2;"> 
         DOWNLOAD

@@ -5,6 +5,20 @@
     border-bottom: solid 9px #3cb8c7;
     text-align: center;
 }
+
+a[href$=".pdf"]:before {
+    background: url('/icons/pdf.png') no-repeat;
+    padding: 3px 18px;
+    content: "."; 
+  }
+
+  a[href$=".jpg"]:before {
+    background: url('/icons/pdf.png') no-repeat;
+    padding: 3px 18px;
+    content: "."; 
+    
+
+  }
 body {
     background-color: #d6e0eb;
 }
