@@ -20,7 +20,7 @@ if (in_array($fileActualExt, $allowed)) {
             $fileNameNew = uniqid ('',true).".".$fileActualExt; // Añade un Id al archivo
             $fileDestination = 'uploads/'.$fileNameNew; // Define la carpeta donde se guarda el archivo
             move_uploaded_file($file ["tmp_name"],"./uploads/".$file["name"]); // Mueve el archivo desde la carpeta temporal al root
-            header('Location:'. $_SERVER['HTTP_REFERER']);;
+            header('Location:'. $_SERVER['HTTP_REFERER']);
 
         } else {
             echo "Your file is too large";
