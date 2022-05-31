@@ -6,19 +6,32 @@
     text-align: center;
 }
 
-a[href$=".pdf"]:before {
-    background: url('/icons/pdf.png') no-repeat;
-    padding: 3px 18px;
-    content: "."; 
-  }
 
-  a[href$=".jpg"]:before {
-    background: url('/icons/pdf.png') no-repeat;
-    padding: 3px 18px;
-    content: "."; 
-    
+a[href$=".jpg"]::after {
+    content: "\f1c5";
+    display: inline-table;
+    font-family: FontAwesome;
+    font-size: 7em;
+    margin: auto;
+}
 
-  }
+  a[href$=".pdf"]::after {
+    content: "\f1c1";
+    display: inline-table;
+    font-family: FontAwesome;
+    font-size: 7em;
+    margin: auto;
+}
+
+a[href$=".png"]::after {
+    content: "\f1c5";
+    display: inline-table;
+    font-family: FontAwesome;
+    font-size: 7em;
+    margin: auto;
+}
+
+
 body {
     background-color: #d6e0eb;
 }
@@ -72,6 +85,7 @@ body {
     background-color: #2f263b;
     border-bottom: 4px solid gray;
     border-top: 1px solid #d5d5d5;
+    text-align: center;
 }
 
 .FilesUpload {
