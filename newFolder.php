@@ -6,8 +6,8 @@
 		
 	}
 ?>
-<button type="button" class="btn btn-info btn-lg btn-block" data-bs-toggle="modal" data-bs-target="#CreateFolder">Create Folder</button>
-<button type="button" class="btn btn-secondary btn-lg btn-block" data-bs-toggle="modal" data-bs-target="#RenameFolder">Rename Folder</button>
+<button type="button" class="btn btn-info btn-lg btn-block btn-folder" data-bs-toggle="modal" data-bs-target="#CreateFolder"><i class="fa-solid fa-folder-plus"></i> Create Folder</button>
+<button type="button" class="btn btn-secondary btn-lg btn-block btn-folder" data-bs-toggle="modal" data-bs-target="#RenameFolder"><i class="fa-solid fa-pen-to-square"></i> Rename Folder</button>
 
 <!-- Create Folder Modal -->
 <div class="modal fade" id="CreateFolder" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">

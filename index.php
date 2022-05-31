@@ -23,7 +23,7 @@
             <?php require_once("newFolder.php");?>
         </div>
         <div class="Upload">
-        <button type="button" class="btn btn-warning btn-lg btn-block" data-bs-toggle="modal" data-bs-target="#UploadFile">Upload File</button>
+        <button type="button" class="btn btn-warning btn-lg btn-block btn-folder" data-bs-toggle="modal" data-bs-target="#UploadFile"><i class="fa-solid fa-cloud-arrow-up"></i> Upload File</button>
         </div>
     </div>
 

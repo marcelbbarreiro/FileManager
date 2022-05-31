@@ -146,6 +146,7 @@ body {
     border: 7px;
     border-color: #3db7c7;
     border-style: double;
+    width: -webkit-fill-available;
 }
 
 .folder {
@@ -162,6 +163,10 @@ body {
     border: 7px;
     border-color: #3db7c7;
     border-style: double;
+    width: -webkit-fill-available;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
 }
 
 
@@ -195,6 +200,10 @@ body {
 .btn-width {
     width: -webkit-fill-available;
     margin: 5px;
+}
+
+.btn-folder {
+    width: -webkit-fill-available;
 }
 
 a {
