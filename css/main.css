@@ -102,3 +102,12 @@ body {
     display: flex;
     justify-content: space-evenly;
 }
+
+.btn-width {
+    width: -webkit-fill-available;
+    margin: 5px;
+}
+
+a {
+    text-decoration: none;
+}

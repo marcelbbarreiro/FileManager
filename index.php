@@ -35,6 +35,7 @@ for ($a = 2; $a < count($files); $a++)
 {
 ?>
 
+    <div class="buttons">    
     <p class="files">
     <a href="./uploads/<?php echo $files[$a];?>"view = "<?php echo $files[$a];?>"target="_blank" style="color:#30d2f2;"> 
         </a>
@@ -49,10 +50,13 @@ for ($a = 2; $a < count($files); $a++)
         <a href="rename.php?rename/" style="color:green;" data-bs-toggle="modal" data-bs-target="#exampleModal">
         RENAME
         </a>
-        <a href="./uploads/<?php echo $files[$a];?> "style="color:orange;">
+         
+        <button type="button" class="btn btn-warning btn-width">
+        <a href="./uploads/<?php echo $files[$a];?> "target="_blank" style="color:black;">
         VIEW
-        </a>
+        </a></button> 
         </p>
+        </div>
         <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
