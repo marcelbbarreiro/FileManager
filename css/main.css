@@ -16,6 +16,11 @@ filter: drop-shadow(2px 4px 6px #41394c);
 font-family: inherit;
 }
 
+.subtitle {
+    font-size: 17px;
+    padding: 10px 0px 0px 0px;
+}
+
 a[href$=".jpg"]::after {
     content: "\f1c5";
     display: inline-table;
@@ -81,7 +86,7 @@ a[href$=".html"]::after {
 }
 
 a[href$=".mp4"]::after {
-    content: "\f1c8";
+    content: "\f167";
     display: inline-table;
     font-family: FontAwesome;
     font-size: 6em;
