@@ -10,7 +10,7 @@ $fileType = $_FILES['file']["type"];
 $fileExt = explode('.', $fileName); // separa el nombre y la extension del archivo por el punto (.)
 $fileActualExt = strtolower(end($fileExt)); // lowercase la extension ej: .jpg, .gif,
 
-$allowed = array('jpg', 'gif', 'jpeg', 'png', 'pdf');
+$allowed = array('jpg', 'gif', 'jpeg', 'png', 'pdf','doc', 'csv', 'css', 'html', 'htm', 'js', 'json', 'php', 'txt', 'xml', 'mp3', 'mp4', 'mpeg'); // array de extensiones permitidas
 // define las extensiones permitidas.
 
 

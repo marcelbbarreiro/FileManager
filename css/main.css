@@ -6,12 +6,21 @@
     text-align: center;
 }
 
+.title {
+
+color: #11caf0;
+background: #161616;
+border-radius: 11px;
+padding: 14px;
+filter: drop-shadow(2px 4px 6px #41394c);
+font-family: inherit;
+}
 
 a[href$=".jpg"]::after {
     content: "\f1c5";
     display: inline-table;
     font-family: FontAwesome;
-    font-size: 7em;
+    font-size: 6em;
     margin: auto;
 }
 
@@ -19,7 +28,7 @@ a[href$=".jpg"]::after {
     content: "\f1c1";
     display: inline-table;
     font-family: FontAwesome;
-    font-size: 7em;
+    font-size: 6em;
     margin: auto;
 }
 
@@ -27,9 +36,84 @@ a[href$=".png"]::after {
     content: "\f1c5";
     display: inline-table;
     font-family: FontAwesome;
-    font-size: 7em;
+    font-size: 6em;
     margin: auto;
 }
+
+a[href$=".gif"]::after {
+    content: "\f03e";
+    display: inline-table;
+    font-family: FontAwesome;
+    font-size: 6em;
+    margin: auto;
+}
+
+a[href$=".csv"]::after {
+    content: "\f1c3";
+    display: inline-table;
+    font-family: FontAwesome;
+    font-size: 6em;
+    margin: auto;
+}
+
+a[href$=".doc"]::after {
+    content: "\f15c";
+    display: inline-table;
+    font-family: FontAwesome;
+    font-size: 6em;
+    margin: auto;
+}
+
+a[href$=".css"]::after {
+    content: "\f38b";
+    display: inline-table;
+    font-family: FontAwesome;
+    font-size: 6em;
+    margin: auto;
+}
+
+a[href$=".html"]::after {
+    content: "\f268";
+    display: inline-table;
+    font-family: FontAwesome;
+    font-size: 6em;
+    margin: auto;
+}
+
+a[href$=".mp4"]::after {
+    content: "\f1c8";
+    display: inline-table;
+    font-family: FontAwesome;
+    font-size: 6em;
+    margin: auto;
+}
+
+
+a[href$=".js"]::after {
+    content: "\f3b9";
+    display: inline-table;
+    font-family: FontAwesome;
+    font-size: 6em;
+    margin: auto;
+}
+
+a[href$=".php"]::after {
+    content: "\f457";
+    display: inline-table;
+    font-family: FontAwesome;
+    font-size: 6em;
+    margin: auto;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 body {
